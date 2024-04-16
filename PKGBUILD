@@ -2,7 +2,7 @@
 
 pkgname=symfony-cli
 pkgrel=6
-pkgver=5.8.14
+pkgver=5.8.15
 pkgdesc="The Symfony client helps developers create and manage Symfony applications."
 url="https://symfony.com/"
 arch=('x86_64')
@@ -15,7 +15,7 @@ conflicts=('symfony-cli')
 source=(
     "git+https://github.com/symfony-cli/symfony-cli#tag=v${pkgver}"
 )
-sha256sums=('SKIP')
+sha256sums=('6bd0312d8f73f1bbecadda7bd115284e21507140dbb109aa3ea7a7ba4b6539be')
 
 build() {
   cd "symfony-cli"
