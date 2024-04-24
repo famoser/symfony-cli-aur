@@ -1,7 +1,7 @@
 # Maintainer: Florian Moser <arch@famoser.ch>
 
 pkgname=symfony-cli
-pkgrel=6
+pkgrel=7
 pkgver=5.8.16
 pkgdesc="The Symfony client helps developers create and manage Symfony applications."
 url="https://symfony.com/"
@@ -15,7 +15,7 @@ conflicts=('symfony-cli')
 source=(
     "git+https://github.com/symfony-cli/symfony-cli#tag=v${pkgver}"
 )
-sha256sums=('95c83c5a3df07a5a6847e9865e5fec0f3d5191c13d0847c992dfdd4f52b471e5')
+sha256sums=('SKIP')
 
 build() {
   cd "symfony-cli"

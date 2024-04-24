@@ -7,7 +7,6 @@ rm -rf src
 rm -rf pkg
 rm -rf symfony-cli-*.gz
 rm -rf symfony-cli-*.tar.zst
-updpkgsums
 makepkg -si --noconfirm
 makepkg --printsrcinfo > .SRCINFO
 set +e
