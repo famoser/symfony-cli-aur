@@ -2,7 +2,7 @@
 
 pkgname=symfony-cli
 pkgrel=7
-pkgver=5.11.0
+pkgver=5.12.0
 pkgdesc="The Symfony client helps developers create and manage Symfony applications."
 url="https://symfony.com/"
 arch=('x86_64')
@@ -24,9 +24,9 @@ build() {
   PKGVER=${pkgver}
 
   go mod download
-  go build -o symfony -trimpath -ldflags '-s -w -X main.channel=stable -X main.buildDate='"${DATE}"' -X main.version='"${PKGVER}"''
+  go build -trimpath -ldflags '-s -w -X main.channel=stable -X main.buildDate='"${DATE}"' -X main.version='"${PKGVER}"''
 }
 
 package() {    
-    install -D -m 755 "${srcdir}/symfony-cli/symfony" "${pkgdir}/usr/bin/symfony"
+    install -D -m 755 "${srcdir}/symfony-cli/symfony-cli" "${pkgdir}/usr/bin/symfony"
 }
