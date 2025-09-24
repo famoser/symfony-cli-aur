@@ -1,13 +1,12 @@
 # Maintainer: Florian Moser <arch@famoser.ch>
 
 pkgname=symfony-cli
-pkgrel=7
+pkgrel=8
 pkgver=5.14.2
 pkgdesc="The Symfony client helps developers create and manage Symfony applications."
 url="https://symfony.com/"
 arch=('x86_64')
 license=('AGPL3')
-install="symfony-cli.install"
 depends=('glibc')
 makedepends=('git' 'go')
 provides=('symfony-cli')
